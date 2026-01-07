@@ -31,7 +31,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Noise texture overlay */
 body::before {
   content: '';
   position: fixed;
@@ -45,7 +44,6 @@ body::before {
   z-index: 0;
 }
 
-/* Scan line effect */
 body::after {
   content: '';
   position: fixed;
@@ -79,7 +77,6 @@ body::after {
   min-height: 100vh;
 }
 
-/* Container for main content */
 .main-container {
   max-width: 1400px;
   margin: 0 auto;
@@ -88,7 +85,6 @@ body::after {
   z-index: 1;
 }
 
-/* Welcome Section Styling */
 .welcome-section {
   margin: 3rem 0;
   padding: 3rem;
@@ -195,7 +191,6 @@ body::after {
   font-weight: 700;
 }
 
-/* Feature Grid */
 .feature-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -279,7 +274,6 @@ body::after {
   font-weight: 500;
 }
 
-/* Action Button */
 .action-button {
   display: inline-flex;
   align-items: center;
@@ -333,7 +327,6 @@ body::after {
   transform: translateX(8px);
 }
 
-/* Status Bar */
 .status-bar {
   display: flex;
   align-items: center;
@@ -374,7 +367,6 @@ body::after {
   margin-left: 0.5rem;
 }
 
-/* Card Component */
 .card {
   padding: 2rem;
   background: linear-gradient(135deg, var(--dark-elevated) 0%, var(--dark) 100%);
@@ -389,7 +381,6 @@ body::after {
   box-shadow: 0 8px 30px rgba(255, 107, 53, 0.2);
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .main-container {
     padding: 1rem;
@@ -454,7 +445,6 @@ body::after {
   }
 }
 
-/* Loading/Transition States */
 .fade-in {
   animation: fadeIn 0.6s ease-out;
 }
@@ -479,7 +469,6 @@ body::after {
   }
 }
 
-/* Scrollbar Styling */
 ::-webkit-scrollbar {
   width: 12px;
 }
@@ -498,7 +487,6 @@ body::after {
   background: var(--primary);
 }
 
-/* Selection Color */
 ::selection {
   background: var(--primary);
   color: var(--dark);
