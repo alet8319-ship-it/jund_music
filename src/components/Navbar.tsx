@@ -502,7 +502,6 @@ const Navbar = (): React.JSX.Element => {
           transform: translateY(0) scale(0.98);
         }
 
-        /* Responsive Design */
         @media (max-width: 968px) {
           .navbar-container {
             padding: 1.25rem 1.5rem;
