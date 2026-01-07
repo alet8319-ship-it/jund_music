@@ -4,8 +4,8 @@
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "allowJs": false,
     "skipLibCheck": true,
-    "esModuleInterop": true,                 // ✅ Needed for default imports
-    "allowSyntheticDefaultImports": true,   // ✅ Needed for React default import
+    "esModuleInterop": true,                
+    "allowSyntheticDefaultImports": true,  
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "module": "ESNext",
