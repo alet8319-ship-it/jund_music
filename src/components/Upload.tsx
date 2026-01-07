@@ -10,7 +10,6 @@ const Upload = (): React.JSX.Element => {
   const [dragActive, setDragActive] = useState(false);
   const { user } = useUser();
 
-  // Check if user is admin
   const isAdmin = user?.publicMetadata?.role === "admin";
 
   const handleUpload = async () => {
@@ -77,7 +76,6 @@ const Upload = (): React.JSX.Element => {
     return Math.round(bytes / Math.pow(k, i) * 100) / 100 + " " + sizes[i];
   };
 
-  // Only show upload UI for admins
   if (!isAdmin) {
     return (
       <div style={styles.restrictedContainer}>
@@ -460,7 +458,6 @@ const styles: { [key: string]: React.CSSProperties } = {
   },
 };
 
-// Add keyframe animation for spinner (you'll need to add this to your global CSS)
 const styleSheet = document.createElement("style");
 styleSheet.textContent = `
   @keyframes spin {
