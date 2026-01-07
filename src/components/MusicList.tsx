@@ -412,7 +412,6 @@ const MusicList = (): React.JSX.Element => {
           z-index: 0;
         }
 
-        /* HEADER SECTION */
         .header-section {
           margin-bottom: 3rem;
           position: relative;
@@ -541,7 +540,6 @@ const MusicList = (): React.JSX.Element => {
           50% { opacity: 1; }
         }
 
-        /* EMPTY STATE */
         .empty-state {
           background: linear-gradient(135deg, var(--dark-elevated) 0%, var(--dark) 100%);
           border: 3px dashed var(--primary);
@@ -615,8 +613,6 @@ const MusicList = (): React.JSX.Element => {
           0% { transform: translateX(-100%); }
           100% { transform: translateX(100%); }
         }
-
-        /* TRACK GRID */
         .track-grid {
           display: grid;
           grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -746,28 +742,23 @@ const MusicList = (): React.JSX.Element => {
           transform: scale(1.1) rotate(90deg);
           box-shadow: 0 0 15px rgba(255, 107, 53, 0.5);
         }
-
-        /* TRACK BODY */
         .track-body {
           display: flex;
           gap: 1.25rem;
           margin-bottom: 1.5rem;
           align-items: center;
         }
-
         .vinyl-mini {
           width: 70px;
           height: 70px;
           flex-shrink: 0;
         }
-
         .vinyl-spinning,
         .vinyl-static {
           width: 100%;
           height: 100%;
           position: relative;
         }
-
         .mini-disc {
           width: 100%;
           height: 100%;
@@ -885,8 +876,6 @@ const MusicList = (): React.JSX.Element => {
           border-radius: 25px;
           margin: 0 10px;
         }
-
-        /* NOW PLAYING BAR */
         .now-playing-bar {
           display: flex;
           align-items: center;
@@ -934,8 +923,6 @@ const MusicList = (): React.JSX.Element => {
           font-size: 1.2rem;
           animation: pulse 1s ease-in-out infinite;
         }
-
-        /* RESPONSIVE */
         @media (max-width: 1200px) {
           .track-grid {
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
